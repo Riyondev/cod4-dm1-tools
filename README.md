@@ -1,5 +1,17 @@
 # cod4-dm1-tools
 
+<p align="center">
+  <strong>Parse, decode, inspect, and render Call of Duty 4 <code>.dm_1</code> demo recordings.</strong>
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License"></a>
+  <a href="package.json"><img src="https://img.shields.io/badge/node-%3E%3D22-brightgreen.svg" alt="Node.js >= 22"></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.x-blue.svg" alt="TypeScript"></a>
+  <a href="#cli-reference"><img src="https://img.shields.io/badge/CLI-dm1-purple.svg" alt="dm1 CLI"></a>
+  <a href="#legal-and-asset-policy"><img src="https://img.shields.io/badge/game_assets-not_included-red.svg" alt="Game assets not included"></a>
+</p>
+
 Parse, inspect, decode, and render **Call of Duty 4** `.dm_1` demo recordings from Node.js.
 
 `cod4-dm1-tools` is a TypeScript toolkit for working with CoD4 multiplayer demo files. It understands the demo container, decodes snapshot metadata and player state, exports camera paths, renders tactical top-down replay videos, and can drive a local CoD4 install to capture true first-person engine-rendered footage.
