@@ -1,0 +1,44 @@
+{
+  "name": "cod4-dm1-tools",
+  "version": "0.1.0",
+  "description": "Parse Call of Duty 4 .dm_1 demo files and render them to video. Open-source, no game install required for parsing.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "dm1": "./dist/cli.js"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "node --experimental-strip-types src/cli.ts",
+    "build": "tsc -p tsconfig.json",
+    "gen:netfields": "node scripts/gen-netfields.mjs",
+    "test": "node --test tests/container.test.ts tests/bitreader.test.ts tests/meta.test.ts tests/fastfile.test.ts tests/capture.test.ts tests/integration.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "cod4",
+    "call-of-duty",
+    "demo",
+    "dm_1",
+    "parser",
+    "replay"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^1.0.0",
+    "ffmpeg-static": "^5.3.0"
+  }
+}
